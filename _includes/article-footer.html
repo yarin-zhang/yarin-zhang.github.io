@@ -1,4 +1,4 @@
-{%- include snippets/assign.html
+<!-- {%- include snippets/assign.html
   target=site.data.variables.default.page.show_author_profile
   source0=layout.show_author_profile source1=page.show_author_profile -%}
 {%- assign _show_author_profile = __return -%}
@@ -11,10 +11,10 @@
 {%- include snippets/assign.html
   target=site.data.variables.default.page.license
   source0=layout.license source1=page.license -%}
-{%- assign _license = __return -%}
+{%- assign _license = __return -%} -->
 
 <footer class="article__footer">
-  {%- if page.modify_date -%}
+    <!-- {%- if page.modify_date -%}
     {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
     {%- assign _locale_date_format = __return -%}
 
@@ -51,5 +51,5 @@
       {%- assign _license_data = _data_license[_license] -%}
     {%- endif -%}
     <div class="article__license">{%- include article/footer/license.html license=_license_data -%}</div>
-  {%- endif -%}
+  {%- endif -%} -->
 </footer>
